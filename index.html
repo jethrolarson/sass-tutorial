@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="utf-8"/>
+	<title>SASS/Compass Tutorial</title>
+	<link rel="stylesheet" href=""/>
+</head>
+<body>
+	<div id="page">
+		<h1>SASS/Compass Tutorial</h1>
+		<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="jethrolarson">Tweet</a>
+		<form action="">
+			<fieldset>
+				<legend>Form 1</legend>
+				<div class="field">
+					<label>Required Input</label>
+					<input type="text" class="required" name="requiredtext" placeholder="Required Text"/>
+				</div>
+		
+				<!--Shouldn't validate invisible fields by default, this can be overridden-->
+				<input type="text" class="required" style="display:none" name="hidden requiredtext"/>
+		
+				<div class="field">
+					<input type="text" class="required date" name="requiredtext" placeholder="Date: MM/DD/YYYY"/>
+				</div>
+				<div class="field cb">
+					<input id="terms" type="checkbox" class="required" name="terms" />
+					<label for="terms">I agree to terms</label>
+				</div>
+				<div class="field">
+					<strong>Sex</strong>
+					<ul class="radGroup required">
+						<li><input type="radio" name="rg" id="radioA"><label for="radioA">Male</label></li>
+						<li><input type="radio" name="rg" id="radiob"><label for="radiob">Female</label></li>
+						<li><input type="radio" name="rg" id="radioc"><label for="radioc">Devices</label></li>
+					</ul>
+				</div>
+				<div class="field" id="ridiculous">
+					<strong>Weird validation requirement: One of these fields must be filled in with a numeric value greater than 5</strong>
+					<div><input type="text"/> <input type="text"/> <input type="text"/></div>
+				</div>
+				<button type="submit">submit</button>
+			</fieldset>
+		</form>
+	
+		<form action="">
+			<fieldset>
+				<legend>Separate form</legend>
+				<input type="text" class="required"/>
+				<input type="submit" value="Submit"/>
+			</fieldset>
+		</form>
+	</div>
+	
+	<script src="http://platform.twitter.com/widgets.js"></script>
+</body>
+</html>
