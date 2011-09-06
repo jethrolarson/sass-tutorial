@@ -3,55 +3,38 @@
 <head>
 	<meta charset="utf-8"/>
 	<title>SASS/Compass Tutorial</title>
-	<link rel="stylesheet" href=""/>
+	<!-- <link rel="stylesheet" href="old.css"/> -->
+	<link rel="stylesheet" href="stylesheets/screen.css"/>
 </head>
 <body>
 	<div id="page">
 		<h1>SASS/Compass Tutorial</h1>
-		<a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="jethrolarson">Tweet</a>
 		<form action="">
-			<fieldset>
-				<legend>Form 1</legend>
-				<div class="field">
-					<label>Required Input</label>
-					<input type="text" class="required" name="requiredtext" placeholder="Required Text"/>
+			<section>
+				<h2>Heading 1</h2>
+				<div class="content">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					<h2>Some Form</h2>
+					<div class="field">
+						<label>Required Input</label>
+						<input type="text" class="required" name="requiredtext" placeholder="Required Text"/>
+					</div>
+
+					<div class="field">
+						<strong>Sex</strong>
+						<ul class="radGroup required">
+							<li><input type="radio" name="rg" id="radioA"><label for="radioA">Male</label></li>
+							<li><input type="radio" name="rg" id="radiob"><label for="radiob">Female</label></li>
+							<li><input type="radio" name="rg" id="radioc"><label for="radioc">Devices</label></li>
+						</ul>
+					</div>
+					<button type="submit">submit</button>
 				</div>
-		
-				<!--Shouldn't validate invisible fields by default, this can be overridden-->
-				<input type="text" class="required" style="display:none" name="hidden requiredtext"/>
-		
-				<div class="field">
-					<input type="text" class="required date" name="requiredtext" placeholder="Date: MM/DD/YYYY"/>
-				</div>
-				<div class="field cb">
-					<input id="terms" type="checkbox" class="required" name="terms" />
-					<label for="terms">I agree to terms</label>
-				</div>
-				<div class="field">
-					<strong>Sex</strong>
-					<ul class="radGroup required">
-						<li><input type="radio" name="rg" id="radioA"><label for="radioA">Male</label></li>
-						<li><input type="radio" name="rg" id="radiob"><label for="radiob">Female</label></li>
-						<li><input type="radio" name="rg" id="radioc"><label for="radioc">Devices</label></li>
-					</ul>
-				</div>
-				<div class="field" id="ridiculous">
-					<strong>Weird validation requirement: One of these fields must be filled in with a numeric value greater than 5</strong>
-					<div><input type="text"/> <input type="text"/> <input type="text"/></div>
-				</div>
-				<button type="submit">submit</button>
-			</fieldset>
-		</form>
-	
-		<form action="">
-			<fieldset>
-				<legend>Separate form</legend>
-				<input type="text" class="required"/>
-				<input type="submit" value="Submit"/>
-			</fieldset>
+			</section>
 		</form>
 	</div>
-	
-	<script src="http://platform.twitter.com/widgets.js"></script>
+	<script src="js/libs/jquery.js"></script>
+	<script src="js/compiled/validation.js"></script>
+	<script src="js/compiled/app.js" defer></script>
 </body>
 </html>

@@ -41,7 +41,7 @@ Since the stylesheets are compiled you don't have to use fewer files to cut down
 Let's start with some [existing css](old.css) and clean it up some.
 `cp old.css sass/_new.scss`
 
-* Simplify this [CSS3][css3-docs] crap:
+* Simplify this [CSS3][css3-docs] crap:  
   _base.scss: `@import "compass/css3";`
 
 * DRY the colors with some variables
@@ -53,7 +53,7 @@ Let's start with some [existing css](old.css) and clean it up some.
 * Use nesting to calm the chaos.
 * Use & to make nesting easier
 
-* Normally CSS3 Gradients are a pain, but compass makes it so easy we'll add one for fun.
+* Normally CSS3 Gradients are a pain, but compass makes it so easy we'll add one for fun.  
   `@include background-image(linear-gradient(top, white, #aaa));}`
 
 * Define your own mixins for common problems
