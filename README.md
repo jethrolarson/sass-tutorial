@@ -38,7 +38,7 @@ Brief on sass vs. scss: The SASS syntax is a more terse, which I prefer, but can
 
 Since the stylesheets are compiled you don't have to use fewer files to cut down on HTTP requests. So you can organize your source in whatever way makes the most sense. There are some best practices for doing so, but I think that's another discussion.
 
-Let's start with some [existing css](old.css) and clean it up some.
+Let's start with some [existing css](old.css) and clean it up some.  
 `cp old.css sass/_new.scss`
 
 * Simplify this [CSS3][css3-docs] crap:  
@@ -60,6 +60,8 @@ Let's start with some [existing css](old.css) and clean it up some.
 
 More Info
 --------------
+* <http://sass-lang.com/>
+* <http://compass-style.org>
 * [Compass Tutorials](http://compass-style.org/help/tutorials/)
 * [Official Best Practices](compass-practices)
 
