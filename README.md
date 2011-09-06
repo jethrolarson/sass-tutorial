@@ -1,5 +1,5 @@
-Compass Tutorial
-================
+SASS/Compass Tutorial
+=====================
 
 Instalation
 -----------
