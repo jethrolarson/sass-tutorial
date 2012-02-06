@@ -63,7 +63,7 @@ More Info
 * <http://sass-lang.com/>
 * <http://compass-style.org>
 * [Compass Tutorials](http://compass-style.org/help/tutorials/)
-* [Official Best Practices](compass-practices)
+* [Official Best Practices][compass-practices]
 
 ---
 
